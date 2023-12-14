@@ -34,7 +34,7 @@
         alert(`Error: ${json.message}`);
       } else {
         const json = await res.json();
-        status.value = json.length ? json[0].status : 'Not Found';
+        status.value = json.length ? json[0].status : 'Waiting';
       }
     } catch (error) {
       console.error('Error checking registration status:', error);
